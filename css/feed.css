@@ -6,12 +6,10 @@ body{
 	color: #222;
     background: url(/images/background.jpg);
 }
-
 #wrapper {
 	max-width: 960px;
 	margin: auto;
 }
-
 .message_container{
     height: 450px;
     width: 550px;
@@ -26,12 +24,10 @@ body{
     box-shadow: 0px 1px 1px #000;
     background-color: whitesmoke;
 }
-
 .ms_name{
     
     color: black;
 }
-
 .message_line{
     display: inline-block;
     min-height: 30px;
@@ -42,14 +38,12 @@ body{
     color: white;
     background-color: rgb(29, 108, 255);
 }
-
 .header{
     width: 960px;
     height: 50px;
     border-radius: 5px;
     background-color: rgb(36, 105, 46);
 }
-
 .right-sidebar{
     height: 505px;
     width: 200px;
@@ -66,7 +60,6 @@ body{
     border-radius: 5px;
     background-color: whitesmoke;
 }
-
 .messageadd{
     position: fixed;
     top: 510px;
@@ -81,11 +74,9 @@ body{
     margin-left: 5px;
     float: right;
 }
-
 textarea{
     resize: none;
     border: 1px solid whitesmoke;
     border-radius: 3px;
 }
-
 textarea::-webkit-input-placeholder { color: rgb(49, 47, 47); }

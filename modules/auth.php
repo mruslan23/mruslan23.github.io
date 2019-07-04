@@ -8,7 +8,6 @@
     }
     else
     {
-        
         ?>
         <!DOCTYPE html>
         <html lang="en">
@@ -57,7 +56,6 @@
                     }
                     else
                     {
-                        
                         print("<div style='display:inline-block;margin-left:30px;color:red;'>Не удается войти, проверьте введенные данные</div>");
                     }
                 }?>

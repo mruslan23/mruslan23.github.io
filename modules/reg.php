@@ -13,7 +13,6 @@
             $email = trim(htmlspecialchars($_POST['email']));
             $name = trim(htmlspecialchars($_POST['username']));
             $password = trim(htmlspecialchars(md5($_POST['password'])));
-
             $query2 = mysqli_query($db, "SELECT * FROM user WHERE 'email' = '$email' AND 'password' = '$password'");
 
             if(mysqli_num_rows($query2) > 0)

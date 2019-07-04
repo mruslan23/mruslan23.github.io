@@ -8,7 +8,6 @@ $User = mysqli_fetch_assoc($query_name);
 if(!isset($_SESSION['id']))
 {
     header("Location:".$site_url);
-
 }
 else
 {
@@ -66,8 +65,7 @@ else
                                         <?php
                                         print("<span style='color:black'>".explode(":", explode(" ", $time)[1])[0].":".explode(":", explode(" ", $time)[1])[1]."</span>");
                                         ?>
-                                    <br/>                                   
-
+                                    <br/>
                                     <?php
                                 }
                             }
@@ -77,12 +75,12 @@ else
                         ?>
                     </div>
                     <aside class="left-sidebar">
-                    <div class="collection">
-                        <a href="#!" class="collection-item active blue">Диалог 1</a>
-                        <a href="#!" class="collection-item">Диалог 2</a>
-                        <a href="#!" class="collection-item">Диалог 3</a>
-                        <a href="#!" class="collection-item">Диалог 4</a>
-                    </div>
+                        <div class="collection">
+                            <a href="#!" class="collection-item active blue">Диалог 1</a>
+                            <a href="#!" class="collection-item">Диалог 2</a>
+                            <a href="#!" class="collection-item">Диалог 3</a>
+                            <a href="#!" class="collection-item">Диалог 4</a>
+                        </div>
                     </aside>    
                     <div class="messageadd">
                         <form method="POST" action="/server/messageadd.php" name="messages">
@@ -133,17 +131,14 @@ else
                     url:'/server/messageadd.php',
                     data: {"text":message.msg, "sess_id":session_id},
                     success:function(response){
-                        // $("#text").append(response);
                         $("#text").val('');
                     },
                     error:function (xhr, ajaxOptions, thrownError){
                         alert(thrownError);
                     }
                 });
-
                 return false;
                 }
-            
             }
             function showMessage(user, message) {
                 var cont = document.getElementById('message_container');
@@ -161,10 +156,8 @@ else
                 div.appendChild(document.createTextNode(message));
             }
         </script>
-        
     </body>
     </html>
-
     <?php
 }
 ?>
